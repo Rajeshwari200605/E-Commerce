@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Profile</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadProfile()">
+
+<header>
+  <h1>My Profile</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="profile-box">
+  <h2 id="userName"></h2>
+  <p id="userEmail"></p>
+  <button onclick="editProfile()">Edit Profile</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

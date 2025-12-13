@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Panel</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadAdminProducts()">
+
+<header>
+  <h1>Admin Panel</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="form-box">
+  <input id="prodName" placeholder="Product Name">
+  <input id="prodPrice" placeholder="Price" type="number">
+  <input id="prodCategory" placeholder="Category">
+  <input id="prodImage" placeholder="Image URL">
+  <button onclick="addProduct()">Add Product</button>
+</div>
+<div id="adminProducts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

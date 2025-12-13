@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin(); loadProducts()">
+
+<script>
+  function checkLogin(){
+    if(!localStorage.getItem("loggedIn")){
+      window.location.href = "login.html";
+    }
+  }
+</script>
+
+<header>
+  <h1>Mini E-Commerce</h1>
+  <input id="searchInput" onkeyup="searchProducts()" placeholder="Search products...">
+  <button onclick="toggleDark()">Dark Mode</button>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div style="text-align:center; margin-top:20px;">
+  <button onclick="filterCategory('All')">All</button>
+  <button onclick="filterCategory('Electronics')">Electronics</button>
+  <button onclick="filterCategory('Audio')">Audio</button>
+  <button onclick="filterCategory('Sports')">Sports</button>
+</div>
+
+<div id="productBox" class="product-container"></div>
+
+<a class="cart-btn" href="cart.html">🛒 Go to Cart</a>
+
+<script src="script.js"></script>
+</body>
+</html>

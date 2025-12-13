@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Your Cart</title><link rel="stylesheet" href="style.css"></head>
+<body onload="checkLogin(); loadCart()">
+
+<header>
+  <h1>Your Cart</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div id="cartItems"></div>
+<h2 id="total" class="total-box"></h2>
+
+<a class="cart-btn" href="index.html">⬅ Continue Shopping</a>
+<a class="cart-btn" href="payment.html">💳 Proceed to Payment</a>
+
+<script src="script.js"></script>
+</body>
+</html>
